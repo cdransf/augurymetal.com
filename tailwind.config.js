@@ -32,9 +32,22 @@ module.exports = {
         sans: ['InterVariable', ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        primary: colors.teal,
+        primary: colors.blueGray,
         //@ts-ignore
         gray: colors.neutral, // TODO: Remove ts-ignore after tw types gets updated to v3
+        blueGray: {
+          DEFAULT: '#7AB5C4',
+          50: '#F9FCFC',
+          100: '#EBF4F6',
+          200: '#CFE4EA',
+          300: '#B3D4DD',
+          400: '#96C5D1',
+          500: '#7AB5C4',
+          600: '#539FB3',
+          700: '#3F7E8F',
+          800: '#2E5C68',
+          900: '#1D3A41',
+        },
       },
       typography: (theme) => ({
         DEFAULT: {

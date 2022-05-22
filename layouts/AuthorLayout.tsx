@@ -10,15 +10,28 @@ interface Props {
 }
 
 export default function AuthorLayout({ children, frontMatter }: Props) {
-  const { name, avatar, occupation, company, email, twitter, linkedin, github } = frontMatter
+  const {
+    name,
+    avatar,
+    occupation,
+    company,
+    email,
+    facebook,
+    instagram,
+    youtube,
+    twitter,
+    spotify,
+    applemusic,
+    lastfm,
+  } = frontMatter
 
   return (
     <>
-      <PageSEO title={`About - ${name}`} description={`About me - ${name}`} />
+      <PageSEO title={`Band - ${name}`} description={`Band - ${name}`} />
       <div className="divide-y">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            About
+            Band
           </h1>
         </div>
         <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
@@ -34,10 +47,14 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
             <div className="text-gray-500 dark:text-gray-400">{occupation}</div>
             <div className="text-gray-500 dark:text-gray-400">{company}</div>
             <div className="flex space-x-3 pt-6">
-              <SocialIcon kind="mail" href={`mailto:${email}`} />
-              <SocialIcon kind="github" href={github} />
-              <SocialIcon kind="linkedin" href={linkedin} />
-              <SocialIcon kind="twitter" href={twitter} />
+              <SocialIcon kind="mail" href={`mailto:${email}`} size={6} />
+              <SocialIcon kind="facebook" href={facebook} size={6} />
+              <SocialIcon kind="instagram" href={instagram} size={6} />
+              <SocialIcon kind="youtube" href={youtube} size={6} />
+              <SocialIcon kind="twitter" href={twitter} size={6} />
+              <SocialIcon kind="spotify" href={spotify} size={6} />
+              <SocialIcon kind="applemusic" href={applemusic} size={6} />
+              <SocialIcon kind="lastfm" href={lastfm} size={6} />
             </div>
           </div>
           <div className="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">{children}</div>

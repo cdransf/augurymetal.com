@@ -1,19 +1,23 @@
 import Mail from './mail.svg'
-import Github from './github.svg'
 import Facebook from './facebook.svg'
+import Instagram from './instagram.svg'
 import Youtube from './youtube.svg'
-import Linkedin from './linkedin.svg'
 import Twitter from './twitter.svg'
+import Spotify from './spotify.svg'
+import AppleMusic from './applemusic.svg'
+import Lastfm from './lastfm.svg'
 
 // Icons taken from: https://simpleicons.org/
 
 const components = {
   mail: Mail,
-  github: Github,
   facebook: Facebook,
+  instagram: Instagram,
   youtube: Youtube,
-  linkedin: Linkedin,
   twitter: Twitter,
+  spotify: Spotify,
+  applemusic: AppleMusic,
+  lastfm: Lastfm,
 }
 
 const SocialIcon = ({ kind, href, size = 8 }) => {

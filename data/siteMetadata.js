@@ -1,22 +1,25 @@
 const siteMetadata = {
-  title: 'Next.js Starter Blog',
-  author: 'Tails Azimuth',
-  headerTitle: 'TailwindBlog',
-  description: 'A blog created with Next.js and Tailwind.css',
-  language: 'en-us',
-  theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  title: 'Augury',
+  author: 'Augury',
+  headerTitle: 'Augury',
+  description:
+    'The official website of progressive death metal titans Augury. Check in for the latest news, tour dates, music and videos.',
+  language: 'en-ca',
+  theme: 'dark', // system, dark or light
+  siteUrl: 'https://augurymetal.com',
+  siteRepo: 'https://github.com/cdransf/augurymetal.com',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'address@yoursite.com',
-  github: 'https://github.com',
-  twitter: 'https://twitter.com/Twitter',
-  facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
-  locale: 'en-US',
+  email: 'info@augurymetal.com',
+  twitter: 'https://twitter.com/augurymetal',
+  facebook: 'https://www.facebook.com/augury',
+  instagram: 'https://instagram.com/augurymetal',
+  youtube: 'https://youtube.com/augurymetal',
+  spotify: 'http://open.spotify.com/artist/7Iy3W9Pe1ivZzIM3jZvW59',
+  applemusic: 'https://music.apple.com/us/artist/augury/1101253774',
+  lastfm: 'https://www.last.fm/music/augury',
+  locale: 'en-CA',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
     // content security policy in the `next.config.js` file.
@@ -29,14 +32,14 @@ const siteMetadata = {
   newsletter: {
     // supports mailchimp, buttondown, convertkit, klaviyo
     // Please add your .env file and modify it according to your selection
-    provider: 'buttondown',
+    provider: '',
   },
   comment: {
     // If you want to use a commenting system other than giscus you have to add it to the
     // content security policy in the `next.config.js` file.
     // Select a provider and use the environment variables associated to it
     // https://vercel.com/docs/environment-variables
-    provider: 'giscus', // supported providers: giscus, utterances, disqus
+    provider: '', // supported providers: giscus, utterances, disqus
     giscusConfig: {
       // Visit the link below, and follow the steps in the 'configuration' section
       // https://giscus.app/
