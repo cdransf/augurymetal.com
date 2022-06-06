@@ -7,15 +7,15 @@ export default function Footer() {
     <footer>
       <div className="mt-16 flex flex-col items-center">
         <div className="mb-3 flex space-x-4">
-          <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} size={6} />
-          <SocialIcon kind="facebook" href={siteMetadata.facebook} size={6} />
-          <SocialIcon kind="instagram" href={siteMetadata.instagram} size={6} />
-          <SocialIcon kind="youtube" href={siteMetadata.youtube} size={6} />
-          <SocialIcon kind="twitter" href={siteMetadata.twitter} size={6} />
-          <SocialIcon kind="spotify" href={siteMetadata.spotify} size={6} />
-          <SocialIcon kind="applemusic" href={siteMetadata.applemusic} size={6} />
-          <SocialIcon kind="bandcamp" href={siteMetadata.bandcamp} size={6} />
-          <SocialIcon kind="lastfm" href={siteMetadata.lastfm} size={6} />
+          <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} />
+          <SocialIcon kind="facebook" href={siteMetadata.facebook} />
+          <SocialIcon kind="instagram" href={siteMetadata.instagram} />
+          <SocialIcon kind="youtube" href={siteMetadata.youtube} />
+          <SocialIcon kind="twitter" href={siteMetadata.twitter} />
+          <SocialIcon kind="spotify" href={siteMetadata.spotify} />
+          <SocialIcon kind="applemusic" href={siteMetadata.applemusic} />
+          <SocialIcon kind="bandcamp" href={siteMetadata.bandcamp} />
+          <SocialIcon kind="lastfm" href={siteMetadata.lastfm} />
         </div>
         <div className="mb-8 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
           <div>{`© ${new Date().getFullYear()}`}</div>

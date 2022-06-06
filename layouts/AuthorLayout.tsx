@@ -43,15 +43,15 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
               className="rounded-sm"
             />
             <div className="flex space-x-3 pt-8">
-              <SocialIcon kind="mail" href={`mailto:${email}`} size={6} />
-              <SocialIcon kind="facebook" href={facebook} size={6} />
-              <SocialIcon kind="instagram" href={instagram} size={6} />
-              <SocialIcon kind="youtube" href={youtube} size={6} />
-              <SocialIcon kind="twitter" href={twitter} size={6} />
-              <SocialIcon kind="spotify" href={spotify} size={6} />
-              <SocialIcon kind="applemusic" href={applemusic} size={6} />
-              <SocialIcon kind="bandcamp" href={bandcamp} size={6} />
-              <SocialIcon kind="lastfm" href={lastfm} size={6} />
+              <SocialIcon kind="mail" href={`mailto:${email}`} />
+              <SocialIcon kind="facebook" href={facebook} />
+              <SocialIcon kind="instagram" href={instagram} />
+              <SocialIcon kind="youtube" href={youtube} />
+              <SocialIcon kind="twitter" href={twitter} />
+              <SocialIcon kind="spotify" href={spotify} />
+              <SocialIcon kind="applemusic" href={applemusic} />
+              <SocialIcon kind="bandcamp" href={bandcamp} />
+              <SocialIcon kind="lastfm" href={lastfm} />
             </div>
           </div>
           <div className="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">{children}</div>
