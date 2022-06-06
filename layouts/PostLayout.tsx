@@ -11,12 +11,6 @@ import { ReactNode } from 'react'
 import { PostFrontMatter } from 'types/PostFrontMatter'
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter'
 
-const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
-const discussUrl = (slug) =>
-  `https://mobile.twitter.com/search?q=${encodeURIComponent(
-    `${siteMetadata.siteUrl}/blog/${slug}`
-  )}`
-
 const postDateTemplate: Intl.DateTimeFormatOptions = {
   weekday: 'long',
   year: 'numeric',
@@ -33,7 +27,7 @@ interface Props {
 }
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }: Props) {
-  const { slug, fileName, date, title, tags } = frontMatter
+  const { slug, fileName, date, title, tags, video } = frontMatter
 
   return (
     <SectionContainer>
@@ -75,8 +69,8 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                       {author.avatar && (
                         <Image
                           src={author.avatar}
-                          width="38px"
-                          height="38px"
+                          width="64px"
+                          height="64px"
                           alt="avatar"
                           className="h-10 w-10 rounded-full"
                         />
@@ -102,7 +96,21 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               </dd>
             </dl>
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
-              <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
+              <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">
+                {children}
+                {video ? (
+                  <div
+                    className="relative h-0 w-full max-w-full overflow-hidden"
+                    style={{ paddingBottom: '56.25%' }}
+                  >
+                    <iframe
+                      title={title}
+                      src={`https://www.youtube.com/embed/${video}`}
+                      className="absolute top-0 left-0 h-full w-full"
+                    />
+                  </div>
+                ) : null}
+              </div>
               <Comments frontMatter={frontMatter} />
             </div>
             <footer>
