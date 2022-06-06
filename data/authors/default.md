@@ -9,6 +9,7 @@ instagram: https://instagram.com/augurymetal
 youtube: https://youtube.com/augurymetal
 spotify: http://open.spotify.com/artist/7Iy3W9Pe1ivZzIM3jZvW59
 applemusic: https://music.apple.com/us/artist/augury/1101253774
+bandcamp: https://augurymetal.bandcamp.com
 lastfm: https://www.last.fm/music/augury
 ---
 

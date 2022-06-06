@@ -5,6 +5,7 @@ import Youtube from './youtube.svg'
 import Twitter from './twitter.svg'
 import Spotify from './spotify.svg'
 import AppleMusic from './applemusic.svg'
+import BandCamp from './bandcamp.svg'
 import Lastfm from './lastfm.svg'
 
 // Icons taken from: https://simpleicons.org/
@@ -17,10 +18,11 @@ const components = {
   twitter: Twitter,
   spotify: Spotify,
   applemusic: AppleMusic,
+  bandcamp: BandCamp,
   lastfm: Lastfm,
 }
 
-const SocialIcon = ({ kind, href, size = 8 }) => {
+const SocialIcon = ({ kind, href, size = 6 }) => {
   if (!href || (kind === 'mail' && !/^mailto:\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/.test(href)))
     return null
 
@@ -35,7 +37,7 @@ const SocialIcon = ({ kind, href, size = 8 }) => {
     >
       <span className="sr-only">{kind}</span>
       <SocialSvg
-        className={`fill-current text-gray-700 hover:text-blue-500 dark:text-gray-200 dark:hover:text-blue-400 h-${size} w-${size}`}
+        className={`fill-current text-gray-700 hover:text-primary-500 dark:text-gray-200 dark:hover:text-primary-400 h-${size} w-${size}`}
       />
     </a>
   )

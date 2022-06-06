@@ -10,5 +10,6 @@ export type AuthorFrontMatter = {
   twitter: string
   spotify: string
   applemusic: string
+  bandcamp: string
   lastfm: string
 }

@@ -20,6 +20,7 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
     twitter,
     spotify,
     applemusic,
+    bandcamp,
     lastfm,
   } = frontMatter
 
@@ -49,6 +50,7 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
               <SocialIcon kind="twitter" href={twitter} size={6} />
               <SocialIcon kind="spotify" href={spotify} size={6} />
               <SocialIcon kind="applemusic" href={applemusic} size={6} />
+              <SocialIcon kind="bandcamp" href={bandcamp} size={6} />
               <SocialIcon kind="lastfm" href={lastfm} size={6} />
             </div>
           </div>

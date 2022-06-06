@@ -14,11 +14,10 @@ export default function Footer() {
           <SocialIcon kind="twitter" href={siteMetadata.twitter} size={6} />
           <SocialIcon kind="spotify" href={siteMetadata.spotify} size={6} />
           <SocialIcon kind="applemusic" href={siteMetadata.applemusic} size={6} />
+          <SocialIcon kind="bandcamp" href={siteMetadata.bandcamp} size={6} />
           <SocialIcon kind="lastfm" href={siteMetadata.lastfm} size={6} />
         </div>
         <div className="mb-8 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
-          <div>{siteMetadata.author}</div>
-          <div>{` • `}</div>
           <div>{`© ${new Date().getFullYear()}`}</div>
           <div>{` • `}</div>
           <Link href="/">{siteMetadata.title}</Link>
