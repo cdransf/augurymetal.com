@@ -571,7 +571,7 @@ export default function TourArchive() {
           <br />
           2003-02-01 - Montreal, QC @ Le Zest - Obscurcis Romancia
         </p>
-        <p>
+        <p className="pt-10">
           <Link
             href="/tour"
             className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
