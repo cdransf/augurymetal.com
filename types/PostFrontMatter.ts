@@ -6,7 +6,7 @@ export type PostFrontMatter = {
   draft?: boolean
   summary?: string
   images?: string[]
-  video?: string
+  youtubeId?: string
   authors?: string[]
   layout?: string
   canonicalUrl?: string
