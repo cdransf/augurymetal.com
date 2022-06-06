@@ -1,6 +1,6 @@
 ---
 title: Illusive Golden Age out now
-date: '2018-11-01'
+date: '2018-03-31'
 tags: ['album', 'merch', 'release']
 draft: false
 summary: Today is a great day for Augury, Illusive Golden Age is finally out!
