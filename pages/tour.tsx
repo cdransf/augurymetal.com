@@ -1,6 +1,7 @@
 import siteMetadata from '@/data/siteMetadata'
 import tourData from '@/data/tourData'
 import TourDate from '@/components/TourDate'
+import Link from '@/components/Link'
 import { PageSEO } from '@/components/SEO'
 
 export default function Projects() {
@@ -30,12 +31,12 @@ export default function Projects() {
             )}
           </div>
           <p className="pt-10">
-            <a
+            <Link
               href="/tour-archive"
               className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
             >
               View our past tour dates →
-            </a>
+            </Link>
           </p>
         </div>
       </div>
