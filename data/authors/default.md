@@ -1,15 +1,18 @@
 ---
 name: Augury
 avatar: /static/images/avatar.png
+bannerimage: /static/images/band.jpg
 email: info@augurymetal.com
-twitter: https://twitter.com/augurymetal,
-facebook: https://www.facebook.com/augury,
-instagram: https://instagram.com/augurymetal,
-youtube: https://youtube.com/augurymetal,
-spotify: http://open.spotify.com/artist/7Iy3W9Pe1ivZzIM3jZvW59,
-applemusic: https://music.apple.com/us/artist/augury/1101253774,
-lastfm: https://www.last.fm/music/augury,
+twitter: https://twitter.com/augurymetal
+facebook: https://www.facebook.com/augury
+instagram: https://instagram.com/augurymetal
+youtube: https://youtube.com/augurymetal
+spotify: http://open.spotify.com/artist/7Iy3W9Pe1ivZzIM3jZvW59
+applemusic: https://music.apple.com/us/artist/augury/1101253774
+lastfm: https://www.last.fm/music/augury
 ---
+
+# Augury
 
 Augury is a relatively new name in Montréal's musical landscape, yet the very idea of the band was in the air since the musicians met in 1997.
 
@@ -25,10 +28,7 @@ Triplet feels and guitar/bass dual and triple harmonies are indeed a staple of A
 
 ---
 
-Patrick Loisel has appeared in Kralizec.
-
-Mathieu Marcotte also appears in Humanoid.
-
-Antoine Baril has appeared in Symbolic and Deviant Process
-
-Dominic 'Forest' Lapointe has appeared in Atheretic and Beyond Creation.
+- Patrick Loisel has appeared in [Kralizec](https://www.metal-archives.com/bands/Kralizec/6002).
+- Mathieu Marcotte also appears in [Spasme](https://www.metal-archives.com/bands/Spasme/436) and Humanoid.
+- Antoine Baril has appeared in Symbolic and [Deviant Process](https://www.metal-archives.com/bands/Deviant_Process/3540364841)
+- Dominic 'Forest' Lapointe has appeared in [First Fragment](https://www.metal-archives.com/bands/First_Fragment/3540325573), [Atheretic](https://www.metal-archives.com/bands/Atheretic/4479) and [Beyond Creation](https://www.metal-archives.com/bands/Beyond_Creation/3540316039).
