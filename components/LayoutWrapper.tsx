@@ -1,3 +1,4 @@
+import Image from '@/components/Image'
 import headerNavLinks from '@/data/headerNavLinks'
 import Link from './Link'
 import SectionContainer from './SectionContainer'
@@ -12,15 +13,23 @@ interface Props {
 const LayoutWrapper = ({ children }: Props) => {
   return (
     <SectionContainer>
+      <Link href="/">
+        <Image
+          src="/static/images/header-banner.jpg"
+          alt="header banner"
+          width="1500px"
+          height="600px"
+        />
+      </Link>
       <div className="flex h-screen flex-col justify-between">
-        <header className="flex items-center justify-between py-6">
+        <header className="flex items-center justify-between">
           <div className="flex items-center text-base sm:w-full">
-            <div className="hidden sm:flex sm:w-full sm:justify-around">
+            <div className="sm:border-y-1 sm:border-l-1 hidden border sm:flex sm:w-full sm:justify-between sm:border-r-0 sm:border-primary-900 sm:text-center">
               {headerNavLinks.map((link) => (
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="p-1 font-bold text-gray-900 hover:text-primary-400 dark:text-gray-100  dark:hover:text-primary-500 sm:p-4"
+                  className="focus:shadow-outline-blue sm:border-r-1 inline border border-transparent bg-primary-600 px-4 py-3 text-sm font-medium leading-5 text-white shadow transition-colors duration-150 hover:bg-primary-700 focus:outline-none dark:hover:bg-primary-500 sm:grow sm:border-y-0 sm:border-l-0 sm:border-primary-900 sm:text-center"
                 >
                   {link.title}
                 </Link>
