@@ -4,7 +4,7 @@ import TourDate from '@/components/TourDate'
 import Link from '@/components/Link'
 import { PageSEO } from '@/components/SEO'
 
-export default function Projects() {
+export default function Tour() {
   return (
     <>
       <PageSEO title={`Tour - ${siteMetadata.author}`} description={siteMetadata.description} />

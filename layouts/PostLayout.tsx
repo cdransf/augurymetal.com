@@ -10,6 +10,7 @@ import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 import { ReactNode } from 'react'
 import { PostFrontMatter } from 'types/PostFrontMatter'
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter'
+import YoutubeVideo from '@/components/YouTubeVideo'
 
 const postDateTemplate: Intl.DateTimeFormatOptions = {
   weekday: 'long',
@@ -98,18 +99,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
               <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">
                 {children}
-                {youtubeId ? (
-                  <div
-                    className="relative h-0 w-full max-w-full overflow-hidden"
-                    style={{ paddingBottom: '56.25%' }}
-                  >
-                    <iframe
-                      title={title}
-                      src={`https://www.youtube.com/embed/${youtubeId}`}
-                      className="absolute top-0 left-0 h-full w-full"
-                    />
-                  </div>
-                ) : null}
+                {youtubeId ? <YoutubeVideo title={title} data={youtubeId} /> : null}
               </div>
               <Comments frontMatter={frontMatter} />
             </div>
