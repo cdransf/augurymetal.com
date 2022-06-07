@@ -8,11 +8,12 @@ const PlausibleScript = () => {
       <Script
         strategy="lazyOnload"
         data-domain={siteMetadata.analytics.plausibleDataDomain}
-        src="https://plausible.io/js/plausible.js"
+        data-api={siteMetadata.analytics.plausibleApiUrl}
+        src={siteMetadata.analytics.plausibleSrcUrl}
       />
       <Script strategy="lazyOnload" id="plausible-script">
         {`
-            window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }
+                window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }
         `}
       </Script>
     </>
