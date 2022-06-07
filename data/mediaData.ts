@@ -33,6 +33,11 @@ const mediaData = [
       '/static/images/media/photos/live-at-metal-bar/08.jpg',
     ],
   },
+  {
+    type: 'video',
+    title: 'Bass session',
+    data: 'Egqz4V1ky2s',
+  },
 ]
 
 export default mediaData
