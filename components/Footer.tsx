@@ -21,6 +21,8 @@ export default function Footer() {
           <div>{`© ${new Date().getFullYear()}`}</div>
           <div>{` • `}</div>
           <Link href="/">{siteMetadata.title}</Link>
+          <div>{` • `}</div>
+          <Link href="https://coryd.dev">Site by Cory</Link>
         </div>
       </div>
     </footer>

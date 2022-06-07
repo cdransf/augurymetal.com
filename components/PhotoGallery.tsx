@@ -9,7 +9,7 @@ const PhotoGallery = (props) => {
   const [photoIndex, setPhotoIndex] = useState(0)
 
   return (
-    <div className="flex flex-row gap-2 p-2">
+    <div className="grid grid-cols-4 gap-2 p-2">
       {data.length
         ? data.map((d: string, index: number) => (
             <Image
@@ -20,7 +20,7 @@ const PhotoGallery = (props) => {
                 setIsOpen(true)
               }}
               src={d}
-              className="w-full cursor-pointer object-cover"
+              className="w-1/4 cursor-pointer object-cover"
               width="300px"
               height="300px"
             />
