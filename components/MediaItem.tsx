@@ -4,7 +4,7 @@ import YoutubeVideo from './YouTubeVideo'
 const MediaItem = (props) => {
   const { type, title, data } = props
 
-  if (type !== 'video' && type !== 'photos') return null
+  if ((type !== 'video' && type !== 'photos') || !data) return null
 
   const item =
     type === 'video' ? (

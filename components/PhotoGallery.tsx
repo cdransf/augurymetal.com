@@ -1,20 +1,43 @@
-import 'photoswipe/dist/photoswipe.css'
-import { Gallery, Item } from 'react-photoswipe-gallery'
+import { useState } from 'react'
+import Lightbox from 'react-image-lightbox'
+import 'react-image-lightbox/style.css'
 import Image from './Image'
 
 const PhotoGallery = (props) => {
   const { title, data } = props
+  const [isOpen, setIsOpen] = useState(false)
+  const [photoIndex, setPhotoIndex] = useState(0)
 
   return (
-    <Gallery>
+    <div className="flex flex-row gap-2 p-2">
       {data.length
-        ? data.map((d: string) => (
-            <Item cropped key={d}>
-              {({ ref, open }) => <Image alt={title} ref={ref} onClick={open} src={d} />}
-            </Item>
+        ? data.map((d: string, index: number) => (
+            <Image
+              key={d}
+              alt={title}
+              onClick={() => {
+                setPhotoIndex(index)
+                setIsOpen(true)
+              }}
+              src={d}
+              className="w-full cursor-pointer object-cover"
+              width="300px"
+              height="300px"
+            />
           ))
         : null}
-    </Gallery>
+
+      {isOpen && (
+        <Lightbox
+          mainSrc={data[photoIndex]}
+          nextSrc={data[(photoIndex + 1) % data.length]}
+          prevSrc={data[(photoIndex + data.length - 1) % data.length]}
+          onCloseRequest={() => setIsOpen(false)}
+          onMovePrevRequest={() => setPhotoIndex((photoIndex + data.length - 1) % data.length)}
+          onMoveNextRequest={() => setPhotoIndex((photoIndex + 1) % data.length)}
+        />
+      )}
+    </div>
   )
 }
 
