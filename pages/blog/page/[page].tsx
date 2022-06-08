@@ -22,7 +22,7 @@ export const getStaticPaths: GetStaticPaths<{ page: string }> = async () => {
 export const getStaticProps: GetStaticProps<{
   posts: PostFrontMatter[]
   initialDisplayPosts: PostFrontMatter[]
-  pagination: { currentPage: number; totalPages: number }
+  pagination: { page: string; currentPage: number; totalPages: number }
 }> = async (context) => {
   const {
     params: { page },
@@ -34,6 +34,7 @@ export const getStaticProps: GetStaticProps<{
     POSTS_PER_PAGE * pageNumber
   )
   const pagination = {
+    page: 'blog',
     currentPage: pageNumber,
     totalPages: Math.ceil(posts.length / POSTS_PER_PAGE),
   }

@@ -15,6 +15,7 @@ export const getStaticProps: GetStaticProps<{
   const posts = await getAllFilesFrontMatter('blog')
   const initialDisplayPosts = posts.slice(0, POSTS_PER_PAGE)
   const pagination = {
+    page: 'blog',
     currentPage: 1,
     totalPages: Math.ceil(posts.length / POSTS_PER_PAGE),
   }
