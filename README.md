@@ -19,7 +19,7 @@ This is the code for the official Augury website at [augurymetal.com](https://au
 
 **Built by:**
 
-Cory Dransfeldt • [hi@coryd.dev](mailto:hi@coryd.dev) • [coryd.dev](https://coryd.dev)
+[Cory Dransfeldt](mailto:cordial.desk8328@coryd.dev) • [coryd.dev](https://coryd.dev)
 
 **Built with:**
 
