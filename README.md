@@ -23,7 +23,7 @@ This is the code for the official Augury website at [augurymetal.com](https://au
 
 **Built with:**
 
-- [VS Code](https://code.visualstudio.com)
+- [Sublime Text](https://sublimetext.com)
 - [iTerm](https://iterm2.com)
 - [Nextjs](https://nextjs.org)
 - [Vercel](https://vercel.com)
