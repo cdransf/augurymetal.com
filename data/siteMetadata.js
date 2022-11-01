@@ -22,9 +22,9 @@ const siteMetadata = {
   lastfm: 'https://www.last.fm/music/augury',
   locale: 'en-CA',
   analytics: {
-    plausibleDataDomain: '',
-    plausibleSrcUrl: '',
-    plausibleApiUrl: '',
+    plausibleDataDomain: 'augurymetal.com',
+    plausibleSrcUrl: '/script.12587e3213z2t1891zaz.js',
+    plausibleApiUrl: '/api/12761a4481f2x6771zab',
   },
   newsletter: {
     // supports mailchimp, buttondown, convertkit, klaviyo
