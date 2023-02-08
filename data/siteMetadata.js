@@ -21,11 +21,7 @@ const siteMetadata = {
   bandcamp: 'https://augurymetal.bandcamp.com',
   lastfm: 'https://www.last.fm/music/augury',
   locale: 'en-CA',
-  analytics: {
-    plausibleDataDomain: 'augurymetal.com',
-    plausibleSrcUrl: '/script.12587e3213z2t1891zaz.js',
-    plausibleApiUrl: '/api/12761a4481f2x6771zab',
-  },
+  analytics: {},
   newsletter: {
     // supports mailchimp, buttondown, convertkit, klaviyo
     // Please add your .env file and modify it according to your selection
