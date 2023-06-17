@@ -9,7 +9,7 @@ const YoutubeVideo = (props) => {
       <iframe
         title={title}
         src={`https://www.youtube.com/embed/${data}`}
-        className="absolute top-0 left-0 h-full w-full"
+        className="absolute left-0 top-0 h-full w-full"
       />
     </div>
   )
