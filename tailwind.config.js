@@ -32,10 +32,7 @@ module.exports = {
         sans: ['InterVariable', ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        primary: colors.blue,
-        //@ts-ignore
-        gray: colors.neutral, // TODO: Remove ts-ignore after tw types gets updated to v3
-        blue: {
+        primary: {
           DEFAULT: '#7AB5C4',
           50: '#F9FCFC',
           100: '#EBF4F6',
@@ -48,6 +45,8 @@ module.exports = {
           800: '#2E5C68',
           900: '#1D3A41',
         },
+        //@ts-ignore
+        gray: colors.neutral, // TODO: Remove ts-ignore after tw types gets updated to v3
       },
       typography: (theme) => ({
         DEFAULT: {

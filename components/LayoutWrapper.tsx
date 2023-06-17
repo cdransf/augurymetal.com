@@ -1,6 +1,6 @@
 import Image from '@/components/Image'
 import headerNavLinks from '@/data/headerNavLinks'
-import Link from './Link'
+import Link from 'next/link'
 import SectionContainer from './SectionContainer'
 import Footer from './Footer'
 import MobileNav from './MobileNav'
@@ -17,8 +17,8 @@ const LayoutWrapper = ({ children }: Props) => {
         <Image
           src="/static/images/header-banner.jpg"
           alt="header banner"
-          width="1500px"
-          height="600px"
+          width="1500"
+          height="600"
         />
       </Link>
       <div className="flex h-screen flex-col justify-between">

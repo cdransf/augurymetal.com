@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Link from './Link'
+import Link from 'next/link'
 import headerNavLinks from '@/data/headerNavLinks'
 
 const MobileNav = () => {
@@ -21,7 +21,7 @@ const MobileNav = () => {
     <div className="sm:hidden">
       <button
         type="button"
-        className="mt-2 ml-1 mr-1 h-8 w-8 rounded py-1"
+        className="ml-1 mr-1 mt-2 h-8 w-8 rounded py-1"
         aria-label="Toggle Menu"
         onClick={onToggleNav}
       >

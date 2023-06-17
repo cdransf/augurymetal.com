@@ -2,7 +2,6 @@
 import React, { useMemo } from 'react'
 import { ComponentMap, getMDXComponent } from 'mdx-bundler/client'
 import Image from './Image'
-import CustomLink from './Link'
 import TOCInline from './TOCInline'
 import Pre from './Pre'
 import { BlogNewsletterForm } from './NewsletterForm'
@@ -16,7 +15,6 @@ export const MDXComponents: ComponentMap = {
   Image,
   //@ts-ignore
   TOCInline,
-  a: CustomLink,
   pre: Pre,
   wrapper: Wrapper,
   //@ts-ignore

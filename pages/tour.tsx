@@ -1,7 +1,7 @@
 import siteMetadata from '@/data/siteMetadata'
 import tourData from '@/data/tourData'
 import TourDate from '@/components/TourDate'
-import Link from '@/components/Link'
+import Link from 'next/link'
 import { PageSEO } from '@/components/SEO'
 
 export default function Tour() {
@@ -9,7 +9,7 @@ export default function Tour() {
     <>
       <PageSEO title={`Tour - ${siteMetadata.author}`} description={siteMetadata.description} />
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
-        <div className="space-y-2 pt-6 pb-8 md:space-y-5">
+        <div className="space-y-2 pb-8 pt-6 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Tour
           </h1>
