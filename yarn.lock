@@ -6337,7 +6337,7 @@ rehype-citation@^0.2.0, rehype-citation@^0.2.5-rc.0:
     unified "^10.1.0"
     unist-util-visit "^4.0.0"
 
-rehype-katex@^6.0.2:
+rehype-katex@^6.0.3:
   version "6.0.3"
   resolved "https://registry.yarnpkg.com/rehype-katex/-/rehype-katex-6.0.3.tgz#83e5b929b0967978e9491c02117f55be3594d7e1"
   integrity sha512-ByZlRwRUcWegNbF70CVRm2h/7xy7jQ3R9LaY4VVSvjnoVWwWVhNL60DiZsBpC5tSzYQOCvDbzncIpIjPZWodZA==
